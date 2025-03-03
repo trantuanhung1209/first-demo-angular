@@ -1,0 +1,106 @@
+
+// todo-list //
+.content {
+    padding: 80px 0;
+    background-color: rgb(159, 159, 159);
+
+    .inner-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        color: #333;
+    }
+    
+    .inner-todo-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+
+        .inner-form {
+            width: 500px;
+            height: auto;
+            gap: 20px;
+            display: flex;
+            align-items: center;
+
+            input {
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                flex: 1;
+            }
+
+            button {
+                padding: 12px 20px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                background-color: #4CAF50;
+                color: white;
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    background-color: #45a049;
+                    transform: scale(1.1);
+                }
+
+                &:active {
+                    background-color: #3e8e41;
+                    transform: scale(1);
+                }
+            }
+        }
+    
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            width: 500px;
+    
+            li {
+                padding: 10px;
+                margin: 10px 0;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #f9f9f9;
+                
+                .inner-action {
+                    display: flex;
+                    gap: 10px;
+
+                    button {
+                        padding: 5px;
+                        border: 1px solid #ccc;
+                        border-radius: 5px;
+                        background-color: #84322c;
+                        color: white;
+                        cursor: pointer;
+                        transition: all 0.3s ease-in-out;
+
+                        &:hover {
+                            background-color: #aa3931;
+                            transform: scale(1.1);
+                        }
+
+                        &:active {
+                            background-color: #933c36;
+                            transform: scale(1);
+                        }
+                    }
+                }
+            }
+    
+            .active {
+                background-color: #4CAF50;
+                color: white;
+            }
+        }
+    }
+}
+// end todo-list //
